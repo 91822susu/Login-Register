@@ -21,9 +21,9 @@
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         android:gravity="center"
-        android:text="Aahaar"
+        android:text="Food Runner"
         android:textColor="@android:color/white"
-        android:textStyle="bold"
-        android:textSize="40sp"/>
+        android:textSize="40sp"
+        android:textStyle="bold" />
 
 </RelativeLayout>

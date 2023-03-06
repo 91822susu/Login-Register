@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        android:id="@+id/layoutRelative">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtDonate"
+            android:text="Donate Food"
+            android:textColor="@android:color/white"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:paddingTop="20dp"/>
+
+        <EditText
+            android:id="@+id/etName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/toolbar"
+            android:layout_marginLeft="12dip"
+            android:background="@drawable/text_boundary_background"
+            android:layout_marginTop="30dip"
+            android:layout_marginRight="12dip"
+            android:hint="@string/donor_name"
+            android:padding="10dip"
+            android:singleLine="true"
+            android:drawableLeft="@drawable/ic_action_person"
+            android:drawablePadding="3dp"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/etName"
+            android:id="@+id/etDonorNumber"
+            android:layout_marginLeft="12dip"
+            android:background="@drawable/text_boundary_background"
+            android:layout_marginTop="8dip"
+            android:layout_marginRight="12dip"
+            android:hint="@string/donor_mobile_number"
+            android:padding="10dip"
+            android:singleLine="true"
+            android:drawableLeft="@drawable/ic_action_phone"
+            android:drawablePadding="3dp"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/etDonorNumber"
+            android:id="@+id/etFoodItems"
+            android:layout_marginLeft="12dip"
+            android:background="@drawable/text_boundary_background"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="12dip"
+            android:hint=" Food Items"
+            android:padding="10dip"
+            android:singleLine="true"
+            android:drawableLeft="@drawable/baseline_fastfood_24"
+            android:drawablePadding="3dp"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/etFoodItems"
+            android:id="@+id/etFoodQuantity"
+            android:layout_marginLeft="12dip"
+            android:background="@drawable/text_boundary_background"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="12dip"
+            android:hint="Food Quantity"
+            android:padding="10dip"
+            android:singleLine="true"
+            android:drawableLeft="@drawable/baseline_fastfood_24"
+            android:drawablePadding="3dp"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/etFoodQuantity"
+            android:id="@+id/etDescription"
+            android:layout_marginLeft="12dip"
+            android:background="@drawable/text_boundary_background"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="12dip"
+            android:hint="Food Description"
+            android:padding="10dip"
+            android:singleLine="true"
+            android:drawableLeft="@drawable/baseline_description_24"
+            android:drawablePadding="3dp"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"/>
+
+        <EditText
+            android:id="@+id/etDonorAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/text_boundary_background"
+            android:layout_below="@id/etDescription"
+            android:layout_marginLeft="12dip"
+            android:layout_marginTop="8dip"
+            android:layout_marginRight="12dip"
+            android:gravity="top"
+            android:drawableLeft="@drawable/ic_action_address"
+            android:drawablePadding="3dp"
+            android:hint="Donor Address"
+            android:padding="10dip"
+            android:singleLine="true"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"/>
+
+        <Button
+            android:id="@+id/btnDonate"
+            android:layout_below="@id/etDonorAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/colorPrimaryDark"
+            android:text="@string/donate"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@android:color/white"/>
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/txtRegisterYourself"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@color/colorPrimary"
+            android:clickable="true"
+            android:focusable="true"
+            android:textAllCaps="false"
+            android:padding="8dp"
+            android:textAlignment="center"
+            android:text="Please Donate Food For Needy Ones!!"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="10dp"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

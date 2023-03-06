@@ -20,4 +20,9 @@
     <string name="enter_mobile_forgot_password">Enter your registered mobile number and email below:</string>
     <string name="next">Next</string>
     <string name="food_runner">Food Runner</string>
+    <string name="donate">Donate</string>
+    <string name="donor_name">Donor Name</string>
+    <string name="donor_mobile_number">Donor Mobile Number</string>
+    <string name="enter_food_quantity">Enter Food Quantity</string>
+    <string name="food_quantity" />
 </resources>
